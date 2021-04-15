@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* 刚开始什么也不展示，防止因加载速度慢，让用户看到源码 */
+        
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 在vue之前div中有个属性v-cloak，在vue解析之后该属性就会消失 -->
+    <div id="app" v-cloak>
+        <h1>{{message}}</h1>
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        // 延迟1000毫秒，一秒之后才创建app对象，模拟用户先看到{{message}}再看到数据
+        setTimeout(function() {
+            const app = new Vue({
+                el: '#app',
+                data: {
+                    message: "蓝越川"
+                }
+
+            })
+        }, 1000)
+    </script>
+
+
+
+</body>
+
+</html>

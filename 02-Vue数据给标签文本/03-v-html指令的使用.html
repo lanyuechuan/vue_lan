@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{message}}</h1>
+        <!-- 展示形式以一个html标签形式 -->
+        <h1 v-html='url'>{{url}}</h1>
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                message: "蓝越川",
+                //当服务器返回一个html标签时
+                url: '<a href=http://www.baidu.com>百度一下</a>'
+            }
+
+        })
+    </script>
+
+
+
+</body>
+
+</html>

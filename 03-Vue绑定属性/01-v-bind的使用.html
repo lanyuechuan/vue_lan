@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- mustache语法 {{}} 只适用于在文本中，不能在属性中 -->
+        <!-- <img src='{{imgURL}}' alt=''> -->
+        <img v-bind:src='imgURL' alt=''>
+        <a v-bind:href='aHref'>百度一下</a>
+        <!-- 因为v-bind经常用，所以vue很人性化地提供了一个语法糖 -->
+        <img :src='imgURL' :alt='myalt'>
+        <a :href='aHref '>百度一下</a>
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app ',
+            data: {
+                message: "蓝越川",
+                imgURL: 'https://img11.360buyimg.com/pop/s590x470_jfs/t1/168853/23/17811/92420/6073fb60E13ed8134/0cd0dc287b70a193.jpg.webp ',
+                aHref: 'www.baidu.com ',
+                myalt: '这是图片'
+            }
+
+        })
+    </script>
+
+
+
+</body>
+
+</html>

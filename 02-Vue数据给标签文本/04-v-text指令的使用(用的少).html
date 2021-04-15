@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{message}}</h1>
+        <!-- v-text只接收一个字符串，用得很少 -->
+        <h1 v-text='message'> 这个字符串不会被显示</h1>
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                message: "蓝越川"
+            }
+
+        })
+    </script>
+
+
+
+</body>
+
+</html>
