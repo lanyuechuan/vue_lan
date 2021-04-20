@@ -2,42 +2,50 @@
 <!DOCTYPE html>
 <!-- HTML文件内容区域，所有的内容都应该写到它的内部。其中lang=”en”表示页面是英文格式，翻译页面时会读取此值来获取当前页面是什么语言编写。 -->
 <html lang="en">
-    <!-- head用于放一些描述信息 -->
-    <head>
-        <meta charset="UTF-8">
-        <title>志愿填报</title>
-        <!-- meta标签还可以设置关键字，用于搜索引擎收录和关键字搜索。 -->
-        <meta name="keywords" content="志愿，填报，高考，大学" />
-        <!-- 网站右边的描述 -->
-        <meta name="description" content="志愿填报是一个面向全国的高考志愿网站。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- 让部分国产浏览器默认按照高速模式渲染页面。 -->
-        <meta name="renderer" content="webkit">
-        <!--支持触屏缩放-->
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-        <!-- link标签可以设置网页标题上的图标。 -->
-        <link rel="shortcut icon" href="https://t7.baidu.com/it/u=2405382010,1555992666&fm=193&f=GIF">
-        <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.0.1/css/bootstrap-theme.css" rel="stylesheet">
-        <style>
-            #outer {
-                background-color: hotpink;
-            }
-            #table {
-                background-color: aquamarine;
-            }
-        </style>
-    </head>
-    <!-- body放希望浏览器呈现出的内容 -->
-    <body>
-        <!-- a标签出了超链接，其实还有一个很常用的方式：做锚点(跳转到页面指定位置，指定位置会向上跑，成为页面中的第一行) -->
+<!-- head用于放一些描述信息 -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>志愿填报</title>
+    <!-- meta标签还可以设置关键字，用于搜索引擎收录和关键字搜索。 -->
+    <meta name="keywords" content="志愿，填报，高考，大学" />
+    <!-- 网站右边的描述 -->
+    <meta name="description" content="志愿填报是一个面向全国的高考志愿网站。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 让部分国产浏览器默认按照高速模式渲染页面。 -->
+    <meta name="renderer" content="webkit">
+    <!--支持触屏缩放-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <!-- link标签可以设置网页标题上的图标。 -->
+    <link rel="shortcut icon" href="https://t7.baidu.com/it/u=2405382010,1555992666&fm=193&f=GIF">
+
+    <style>
+        #outer {
+            background-color: hotpink;
+        }
+
+        #table {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<!-- body放希望浏览器呈现出的内容 -->
+
+<body>
+    <!-- a标签除了超链接，其实还有一个很常用的方式：做锚点(跳转到页面指定位置，指定位置会向上跑，成为页面中的第一行,前提是瞄点的目标位置不在当前页面，否则看不到跳转位置) -->
+    <div style="height: 1200px;" id="top">
         <a href="#i1" title="第一章">第一章 寂寞的春天</a>
         <p>先帝创业未半而中道崩殂，今天下三分，益州疲弊，此诚危急存亡之秋也。然侍卫之臣不懈于内，忠志之士忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜开张圣听，以光先帝遗德，恢弘志士之气，不宜妄自菲薄，引喻失义，以塞忠谏之路也。</p>
         <p>宫中府中，俱为一体，陟罚臧否，不宜异同。若有作奸犯科及为忠善者，宜付有司论其刑赏，以昭陛下平明之理，不宜偏私，使内外异法也。</p>
         <p>侍中、侍郎郭攸之、费祎、董允等，此皆良实，志虑忠纯，是以先帝简拔以遗陛下。愚以为宫中之事，事无大小，悉以咨之，然后施行，必能裨补阙漏，有所广益。</p>
-        <div id="i1">
-            <h3>第一章 寂寞的春天</h3>
-            <p>春暖花开,万物复苏,又到了交配的季节。</p>
-        </div>
-        
-    </body>
+    </div>
+    <div id="i1">
+        <h3>第一章 寂寞的春天</h3>
+        <p>春暖花开,万物复苏,又到了交配的季节。</p>
+    </div>
+    <div>
+        <button><a href="#top">回到顶部</a></button>
+    </div>
+</body>
+
 </html>
