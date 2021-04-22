@@ -59,15 +59,16 @@
 
     data() {
       return {
-        tableData: [{
-          date: '2016-05-02',
-          name: '王小虎',
-          province: '上海',
-          city: '普陀区',
-          address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
-        }]
+        tableData: [
+
+        ]
       }
+    },
+    // 请求接口的json数据再渲染到页面
+    created() {
+        this.$http.get("").then(res=>{
+            this.tableData = res.data;
+        })
     }
   }
 </script>

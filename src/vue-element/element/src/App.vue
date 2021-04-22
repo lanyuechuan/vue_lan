@@ -3,7 +3,7 @@
     <el-container>
     <el-header>
         <!-- 导航菜单 -->
-        <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
+        <el-menu :default-active="activeIndex" class="el-menu-demo" text-color="#44cef6" mode="horizontal" background-color="#75878a" active-text-color="#ffb61e" @select="handleSelect">
             <el-menu-item index="/">主页</el-menu-item>
             <el-submenu index="2">
                 <template slot="title">填志愿</template>
@@ -30,8 +30,7 @@ export default {
   name: 'App',
   data() {
         return {
-                activeIndex: '1',
-                activeIndex2: '1'
+                activeIndex: this.$route.path,
             };
         },
         methods: {
