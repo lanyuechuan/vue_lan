@@ -76,6 +76,13 @@
     </el-main>
   </el-container>
 </el-container>
+
+    <template>
+  <el-radio v-model="radio" label="1">男</el-radio>
+  <el-radio v-model="radio" label="2">女</el-radio>
+    </template>
+
+
     </div>
 </template>
 
@@ -88,10 +95,11 @@
         address: '上海市普陀区金沙江路 1518 弄'
       };
       return {
-        tableData: Array(20).fill(item)
+        tableData: Array(20).fill(item),
+        radio: '1'
       }
     }
-  };
+  }
 </script>
 
 <style scoped>
