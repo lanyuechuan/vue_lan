@@ -10,6 +10,7 @@
     </el-carousel-item>
   </el-carousel>
 </div>
+
 </template>
 <script>
 import homeImg1 from "../assets/indexImgs/1.jpg";
@@ -20,7 +21,7 @@ import homeImg4 from "../assets/indexImgs/4.jpg";
         name: 'Index',
         data() {
             return {
-                imgs: [homeImg1, homeImg2, homeImg3, homeImg4]
+                imgs: [homeImg1, homeImg2, homeImg3, homeImg4],
             }
         }
     }
