@@ -11,8 +11,8 @@
         </el-carousel-item>
     </el-carousel>
     <el-divider><i class="el-icon-mobile-phone"></i></el-divider>
-    <el-row>
-        <el-col :span="6">
+    <el-row type="flex" justify="space-between">
+        <el-col >
             <el-form :inline="true" :model="formInline" class="demo-form-inline" style="height:160px">
                 <el-form-item label="高考分数">
                     <el-input style="width:200px" v-model="formInline.score" placeholder="高考分数"></el-input>
@@ -33,11 +33,12 @@
             </el-form>
         </el-col>
         <el-divider class="el-divider--vertical" direction="vertical"></el-divider>
-        <el-col :span="9" >
-            
+        <el-col>
+            <div>33</div>
         </el-col>
-        <el-col :span="9" >
-            <el-divider direction="vertical"></el-divider>
+        <el-divider direction="vertical"></el-divider>
+        <el-col >
+            
         </el-col>
     </el-row>  
     <el-divider><i class="el-icon-s-flag"></i></el-divider>
