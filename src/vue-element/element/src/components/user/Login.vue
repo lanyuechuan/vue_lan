@@ -1,15 +1,18 @@
 <template>
 <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" label-width="200px" class="demo-ruleForm">
+
   <el-form-item label="账号/用户名/邮箱" prop="account">
     <el-col :span='6'>
       <el-input v-model.number="ruleForm.account"></el-input>
     </el-col>
   </el-form-item>
+
   <el-form-item label="密码" prop="pass">
     <el-col :span='6'>
       <el-input type="password" v-model="ruleForm.pass" autocomplete="off"></el-input>
     </el-col>
   </el-form-item>
+
   <el-form-item label="确认密码" prop="checkPass">
     <el-col :span='6'>
       <el-input type="password" v-model="ruleForm.checkPass" autocomplete="off"></el-input>
@@ -27,17 +30,19 @@
     placement="bottom"
     width="8"
     trigger="hover">
-    <el-button slot="reference" style="color: red">客服微信</el-button>
+    <el-button slot="reference" style="background-color:yellow">客服微信</el-button>
     <img width="140px" height="100px" src='https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jigao616.com%2Fupload%2Fpatent%2F2017%2F9%2F9%2F32336933.gif&refer=http%3A%2F%2Fimg.jigao616.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1621672941&t=108c8b90ea6952cf6694e9f4f6bd5f0d' />
   </el-popover>
   </el-col>
+
   <el-popover
     placement="bottom"
     width="3"
     trigger="hover"
     content="18180844310">
-    <el-button slot="reference" style="color: red">咨询电话</el-button>
+    <el-button slot="reference" style="background-color:yellow">咨询电话</el-button>
   </el-popover>
+
 </el-form>
 </template>
 <script>
